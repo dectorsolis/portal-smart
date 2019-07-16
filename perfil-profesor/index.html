@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Smart-Teaching</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="panel smat-teaching">
+    <meta name="keywords" content="panel smat-teaching">
+    <meta name="author" content="panel smat-teachinge">
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/img/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">    
+
+    
+</head>
+
+    <body>        
+        <header id="header">
+                <div class="container main-menu col-xs-12">
+                    <div class="row align-items-center justify-content-between d-flex">
+                        <div id="logo">
+                            <a><img src="./assets/img/smarteaching-logo.jpg" style=" min-height: 60px; " /></a>
+                        </div>
+                        <nav id="nav-menu-container" style="float:right; margin-top: -30px;">
+                            <ul class="nav-menu">
+                                <li><a><b style="color: black !important;">TUTORIAL </b></a>|</li>
+                                <li><a><b style="color: black !important;">CONÁCTANOS AL 01 800 52 73 35 </b></a>|</li>
+                                <li><a (click)="logout()"><b style="cursor: pointer;">SALIR</b></a></li>
+                            </ul>
+                        </nav>
+                        <!-- #nav-menu-container -->
+                    </div>
+                </div>
+        </header>       
+        <br />
+        <section class="services-area section-gap">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="menu-content  col-lg-12">
+                        <div class="title text-left">
+                            <h4 class="mb-10"><span style="color:darkorange"> ¡Hola Profesor!,</span> es un gusto tenerte por aquí</h4>
+                            <br />
+                            <h1 style="font-family:'Kaushan Script', cursive; ">{{professor.name}}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services-area section-gap" style="background: #eee;">
+            <div class="container">
+                <div class="row">
+                    <h4 class="mb-10" style="margin-top: -8%; padding: 2%;">Selecciona una opción:</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#addCodeModal" class="portfolio-link" data-toggle="modal">
+                            <div class="single-services">
+                                <span class=""><img class="caption" src="./assets/img/portfolio/codigos.png" /></span>
+                                <a>
+                                    <h4><span style="color:#E0395D;"> Registrar codigos</span></h4>
+                                </a>
+                                <p class="blackColor">
+                                    Aqui puedes subir los códigos que tengas disponibles.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#portafolioMiscodigos" class="portfolio-link" data-toggle="modal">
+                            <div class="single-services">
+                                <span class=""><img src="./assets/img/portfolio/horarios.png" /></span>
+                                <a href="#">
+                                    <h4><span style="color:#13652E;">Mis pagos</span></h4>
+                                </a>
+                                <p class="blackColor">
+                                    Historial de Codigos
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#portafolioCourses" class="portfolio-link" data-toggle="modal">
+                            <div class="single-services">
+                                <span class=""><img src="./assets/img/portfolio/materias.png" /></span>
+                                <a href="#">
+                                    <h4><span style="color:#1675A7;">Mis Materias</span></h4>
+                                </a>
+                                <p class="blackColor">
+                                    Revisa las materias que tienes disponibles.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <a href="#misDatosPortafolio" class="portfolio-link" data-toggle="modal" (click)="getDataTeacher()">
+                                <span class=""><img src="./assets/img/portfolio/zonas.png" /></span>
+                                <a href="#">
+                                    <h4><span style="color:#219CDE;">Mis datos personales</span></h4>
+                                </a>
+                                <p class="blackColor">
+                                    Valida tus datos y materias que impartes.
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <a href="#scheduledPortafolio" class="portfolio-link" data-toggle="modal">
+                            <div class="single-services">
+                                <span class=""><img src="./assets/img/portfolio/datos.png" /></span>
+                                <a href="#">
+                                    <h4><span style="color:#E96B00;">Mis horarios</span></h4>
+                                </a>
+                                <p class="blackColor">
+                                    Actualiza los horarios que tienes disponibles.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-services">
+                            <a href="#portafolioZones" class="portfolio-link" data-toggle="modal">
+                                <span class=""><img src="./assets/img/portfolio/mis_codigos.png" /></span>
+                                <a href="#">
+                                    <h4><span style="color:#209687;">Mis zonas de clases</span></h4>
+                                </a>
+                                <p class="blackColor">
+                                    Incrementa las zonas donde deseas impartir clases
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>                
+        <footer class="footer">
+            <div class="">
+                <img style="max-width: 100%;" src="./assets/img/portfolio/Footer.png" />
+            </div>
+        </footer>    
+    </body>
+</html>
+
