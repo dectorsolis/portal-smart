@@ -6,7 +6,6 @@
     background-color: #EF8409;
     color: #fff;
 }
-
 ::selection {
     background-color: #EF8409;
     color: #fff;
@@ -786,11 +785,17 @@ th {
 .section-bg {
     background: #f9fafc;
 }
+.mobile{display:none;}
 
+/*media 767*/
 @media (max-width: 767px) {
     .no-flex-xs {
         display: block !important;
     }
+    .mobile{display: block !important; }
+    .desktop{display:none !important;}
+    .service{padding-top: 10px; border-bottom:3px solid white;}
+    .service:last-child{border:none;}
 }
 
 .row.no-margin {
@@ -2605,7 +2610,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-services h4 {
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     margin-bottom: 20px;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -3328,5 +3333,7 @@ dl.accordion.time-line:before {
 .portfolio-link .caption:hover {
     opacity: 0.5;
 }
-.customer{font-family: 'Dancing Script', cursive !important;  }
+.section, .title{ padding: 20px 0;}
+.customer{font-family: 'Satisfy', cursive !important; font-size: 26px; font-weight: 700; color:black;}
 .orange{ color: darkorange !important;}
+.white{ color:white !important;}
