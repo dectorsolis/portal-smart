@@ -1,26 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Smart-Teaching</title>
 
-<head>
-    <meta charset="utf-8">
-    <title>Smart-Teaching</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="panel smat-teaching">
+        <meta name="keywords" content="panel smat-teaching">
+        <meta name="author" content="panel smat-teachinge">
+        <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="assets/img/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
+        <link rel="stylesheet" href="style.css">    
+        <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="panel smat-teaching">
-    <meta name="keywords" content="panel smat-teaching">
-    <meta name="author" content="panel smat-teachinge">
-    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="assets/img/favicon-194x194.png" sizes="194x194">
-    <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
-    <link rel="stylesheet" href="style.css">    
-    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
-</head>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
+    </head>
     <body>
         <header>
                 <div class="container">
@@ -44,7 +43,7 @@
                             </li>                          
                         </ul>
                         <span class="desktop navbar-text">
-                            <span class="orange"> ¡Hola!,</span> es un gusto tenerte por aquí<br>
+                            <span class="orange"><strong>¡Hola!</strong>,</span> es un gusto tenerte por aquí<br>
                             <!-- <span class="customer">{{costumer.name}}</span> -->
                             <span class="customer">Armando Déctor Solís</span>
                         </span>                        
@@ -61,8 +60,8 @@
                 <span class="customer">Armando Déctor Solís</span>
             </div>
         </section>
-        <section class="section" style="background: #eee;">
-            <div class="container">
+        <section class="section opciones">
+            <div id="opciones" class="container">
                 <h4 class="text-center title">Selecciona una opción:</h4>
                 <div class="row">
                     <div class="col-md-4 col-xs-12 portfolio-link service">
@@ -109,7 +108,7 @@
             </div>
         </section>
         
-        <footer class="footer">
+        <footer class="footer fixed-bottom">
             <div class="">
                 <h4 class="white slogan">Trabajamos para ti con <img src="assets/img/heart.png" width="20" alt="heart"></h4>
                 <span class="copy">© 2012 - 2019 Smart Teaching</span>
