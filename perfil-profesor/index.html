@@ -26,42 +26,47 @@
 
     <body>        
         <header id="header">
-                <div class="container main-menu col-xs-12">
-                    <div class="row align-items-center justify-content-between d-flex">
-                        <div id="logo">
-                            <a><img src="./assets/img/smarteaching-logo.jpg" style=" min-height: 60px; " /></a>
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="#">
+                          <img src="assets/img/smarteaching-logo.jpg" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                          <ul class="navbar-nav mr-auto">
+                              <li class="nav-item">
+                                  <a href="#" class="nav-link" title="tutorial">Tutorial</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="tel:018005273350" class="nav-link">01 800 527 3350</a>
+                              </li>
+                              <li class="nav-item" (click)="logout();" >
+                                  <a class="nav-link"><b style="cursor: pointer;">Salir</b></a>
+                              </li>                          
+                          </ul>
+                          <span class="desktop navbar-text">
+                              <span class="orange"> ¡Hola!,</span> es un gusto tenerte por aquí<br>
+                              <!-- <span class="customer">{{costumer.name}}</span> -->
+                              <span class="customer">Armando Déctor Solís</span>
+                          </span>                        
                         </div>
-                        <nav id="nav-menu-container" style="float:right; margin-top: -30px;">
-                            <ul class="nav-menu">
-                                <li><a><b style="color: black !important;">TUTORIAL </b></a>|</li>
-                                <li><a><b style="color: black !important;">CONÁCTANOS AL 01 800 52 73 35 </b></a>|</li>
-                                <li><a (click)="logout()"><b style="cursor: pointer;">SALIR</b></a></li>
-                            </ul>
-                        </nav>
-                        <!-- #nav-menu-container -->
-                    </div>
+                      </nav>
                 </div>
         </header>       
         <br />
-        <section class="services-area section-gap">
+        <section class="text-center section mobile">
             <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="menu-content  col-lg-12">
-                        <div class="title text-left">
-                            <h4 class="mb-10"><span style="color:darkorange"> ¡Hola Profesor!,</span> es un gusto tenerte por aquí</h4>
-                            <br />
-                            <h1 style="font-family:'Kaushan Script', cursive; ">{{professor.name}}</h1>
-                        </div>
-                    </div>
-                </div>
+                <h6><span class="orange">¡Hola!,</span> es un gusto tenerte por aquí</h6><br>
+                <!-- <h3 class="customer">{{costumer.name}}</h3>-->
+                <span class="customer">Armando Déctor Solís</span>
             </div>
         </section>
         
-        <section class="services-area section-gap" style="background: #eee;">
+        <section class="section" style="background: #eee;">
             <div class="container">
-                <div class="row">
-                    <h4 class="mb-10" style="margin-top: -8%; padding: 2%;">Selecciona una opción:</h4>
-                </div>
+                <h4 class="text-center title">Selecciona una opción:</h4>
                 <div class="row">
                     <div class="col-lg-4 col-md-6">
                         <a href="#addCodeModal" class="portfolio-link" data-toggle="modal">

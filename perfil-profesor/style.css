@@ -6,7 +6,6 @@
     background-color: #EF8409;
     color: #fff;
 }
-
 ::selection {
     background-color: #EF8409;
     color: #fff;
@@ -50,7 +49,8 @@
 
 body {
     color: #777777;
-    font-family: "Poppins", sans-serif;
+    /*font-family: "Poppins", sans-serif;*/
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
     line-height: 1.625em;
@@ -785,11 +785,17 @@ th {
 .section-bg {
     background: #f9fafc;
 }
+.mobile{display:none;}
 
+/*media 767*/
 @media (max-width: 767px) {
     .no-flex-xs {
         display: block !important;
     }
+    .mobile{display: block !important; }
+    .desktop{display:none !important;}
+    .service{padding-top: 10px; border-bottom:3px solid white;}
+    .service:last-child{border:none;}
 }
 
 .row.no-margin {
@@ -3079,6 +3085,12 @@ dl.accordion.time-line:before {
 /*  Footer Styles
 /* =================================== */
 
+.footer{
+    background-color: #11abab;
+    color:white;
+    text-align: center;
+    padding: 10px 0px;
+}
 .footer-area {
     background-color: #04091e;
 }
@@ -3325,9 +3337,3 @@ dl.accordion.time-line:before {
 .customer{font-family: 'Satisfy', cursive !important; font-size: 26px; font-weight: 700; color:black;}
 .orange{ color: darkorange !important;}
 .white{ color:white !important;}
-@media(max-width:767px){
-    .mobile{display: block !important; }
-    .desktop{display:none !important;}
-    .service{padding-top: 10px; border-bottom:3px solid white;}
-    .service:last-child{border:none;}	
-}
