@@ -6,6 +6,7 @@
     background-color: #EF8409;
     color: #fff;
 }
+body{background-color: #eee !important;}
 ::selection {
     background-color: #EF8409;
     color: #fff;
@@ -796,6 +797,9 @@ th {
     .desktop{display:none !important;}
     .service{padding-top: 10px; border-bottom:3px solid white;}
     .service:last-child{border:none;}
+    .footer{padding:0px;}   
+    #opciones{margin:0;}
+    #saludo-movil{background-color: white !important}
 }
 
 .row.no-margin {
@@ -2611,7 +2615,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-services h4 {
     /*margin-top: 30px;*/
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
@@ -3333,7 +3337,9 @@ dl.accordion.time-line:before {
 .portfolio-link .caption:hover {
     opacity: 0.5;
 }
-.section, .title{ padding: 20px 0;}
+.section{ padding: 20px 0;}
+#opciones{margin-top:10%; margin-bottom:12%;}
 .customer{font-family: 'Satisfy', cursive !important; font-size: 26px; font-weight: 700; color:black;}
 .orange{ color: darkorange !important;}
 .white{ color:white !important;}
+.cabecera{background-color:white;}
