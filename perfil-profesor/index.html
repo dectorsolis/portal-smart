@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="assets/img/favicon-194x194.png" sizes="194x194">
     <link rel="icon" type="image/png" href="assets/img/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16">
-    <link rel="stylesheet" href="style.css?v=1.0.3">    
+    <link rel="stylesheet" href="style.css?v=1.0.4">    
     <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
@@ -25,7 +25,7 @@
 </head>
 
     <body>        
-        <header id="header">
+        <header class="cabecera">
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-light">
                         <a class="navbar-brand" href="#">
@@ -55,8 +55,8 @@
                       </nav>
                 </div>
         </header>       
-        <br>
-        <section id="saludo-movil" class="text-center section mobile">
+
+        <section id="saludo-movil" class="text-center mobile section">
             <div class="container">
                 <h6><span class="orange">¡Hola!,</span> es un gusto tenerte por aquí</h6><br>
                 <!-- <h3 class="customer">{{costumer.name}}</h3>-->
@@ -64,11 +64,16 @@
             </div>
         </section>
         
-        <section class="section opciones" style="background: #eee;">
-            <div id="opciones" class="container">
+        <section class="title">
+            <div class="container">
                 <h4 class="text-center title">Selecciona una opción:</h4>
+            </div>
+        </section>
+
+        <section class="section opciones">
+            <div id="opciones" class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 service">
                         <a href="#addCodeModal" class="portfolio-link" data-toggle="modal">
                             <div class="single-services">
                                 <img height="80px" src="./assets/img/portfolio/barras.png" />
@@ -81,7 +86,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 service">
                         <a href="#portafolioMiscodigos" class="portfolio-link" data-toggle="modal">
                             <div class="single-services">
                                 <img height="80px" src="./assets/img/portfolio/calendar.png" />
@@ -95,7 +100,7 @@
                         </a>
                     </div>
 
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 service">
                         <div class="single-services">
                             <a href="#misDatosPortafolio" class="portfolio-link" data-toggle="modal" (click)="getDataTeacher()">
                                 <img height="80px" src="./assets/img/portfolio/datos-personales.png" />
@@ -110,7 +115,7 @@
                     </div>                    
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 service">
                         <a href="#portafolioCourses" class="portfolio-link" data-toggle="modal">
                             <div class="single-services">
                                 <img height="80px" src="./assets/img/portfolio/libros.png" />
@@ -123,7 +128,7 @@
                             </div>
                         </a>
                     </div>                    
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 service">
                         <div class="single-services">
                             <a href="#portafolioZones" class="portfolio-link" data-toggle="modal">
                                 <img height="80px" src="./assets/img/portfolio/clases.png" />
@@ -136,7 +141,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 col-md-6 service">
                         <a href="#scheduledPortafolio" class="portfolio-link" data-toggle="modal">
                             <div class="single-services">
                                 <img height="80px" src="./assets/img/portfolio/pagos.png" />

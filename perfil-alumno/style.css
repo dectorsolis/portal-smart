@@ -800,6 +800,7 @@ th {
     .footer{padding:0px;}   
     #opciones{margin:0;}
     #saludo-movil{background-color: white !important}
+    .fixed-bottom{position:unset !important;}
 }
 
 .row.no-margin {
@@ -3337,9 +3338,8 @@ dl.accordion.time-line:before {
 .portfolio-link .caption:hover {
     opacity: 0.5;
 }
-.section{ padding: 20px 0;}
-#opciones{margin-top:10%; margin-bottom:12%;}
 .customer{font-family: 'Satisfy', cursive !important; font-size: 26px; font-weight: 700; color:black;}
 .orange{ color: darkorange !important;}
 .white{ color:white !important;}
 .cabecera{background-color:white;}
+.title{margin: 5% 0;}
