@@ -39,9 +39,10 @@ table {
     min-height: 630px;
 }
 #banner h2{
-    font-family: 'Satisfy', sans-serif;
+    font-family: 'Lobster', cursive;
     font-size: 45px;
-    color: #FFB03B;
+    color: white;
+    letter-spacing: 6px;
 }
 #banner p{
     font-family: 'PT Sans', sans-serif;
@@ -51,14 +52,17 @@ table {
 .section-padding{
     padding: 15px;
 }
-.sub-title{font-family: 'Satisfy', sans-serif; font-weight: 700; font-size: 28px;}
+.sub-title{font-family: 'Lobster', cursive;font-weight: 700; font-size: 30px; color: black;}
 .logo-name{
-    font-family: 'Satisfy', sans-serif;
-    font-size: 65px;
+    font-family: 'Lobster', cursive;
+    font-size: 6em;
+    letter-spacing: 10px;
     margin-top: 140px;
-    color: #FFB03B;
+    color: #e2bb2c;
 }
 .w-100{width:100%;}
+.letter-spacing{letter-spacing: 6px;}
+.divider{border-top: 2px solid #e2bc41;}
 .sidenav {
     height: 100%;
     width: 0;
@@ -102,9 +106,10 @@ table {
 }
 
 .header-h {
-    color: #FFB03B;
+    color:#e2bb2c;
     font-size: 46px;
-    font-family: 'Satisfy', sans-serif;
+    /*font-family: 'Satisfy', sans-serif;*/
+    font-family: 'Lobster', cursive;
     font-weight: 300;
 }
 .header-p {
@@ -270,8 +275,7 @@ table {
 }
 .about img
 {
-    border: 5px solid rgb(255, 176, 59);
-    border-radius: 2px;
+    border-radius: 6px;
 }
 .small-text{height:100px; font-size: 14px;}
 #event{
@@ -438,6 +442,9 @@ table {
     color: #fff;
     text-transform: uppercase;
     margin: 0 5px;
+}
+@media( max-width:768px){
+    .logo-name{font-size:3em; letter-spacing: 6px;}
 }
 @media (min-width: 768px) and (max-width: 980px) {
     .content-holder h2 {
