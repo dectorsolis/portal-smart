@@ -8,9 +8,9 @@
 body {
 	font-size: 15px;
     line-height: 1.52;
-    color: #717f86;
+    color: #717f86 !important;
     font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif !important;
     font-weight: 400;
     overflow-x: hidden;
 }
@@ -35,6 +35,7 @@ table {
     background-size: cover;
     min-height: 730px;
 }
+#bg-slides{position: absolute; width:100%;padding:150px;}
 .logo{margin-top:12.5%;}
 .bg-color{
     background-color: rgba(212, 212, 212,0.4);
@@ -51,6 +52,8 @@ table {
     color: #fcfcfc;
     font-size: 34px;
 }
+.carousel-caption h3{font-size: 30px;}
+.slide-img{filter: brightness(0.8);}
 .section-padding{
     padding: 15px;
 }
@@ -111,9 +114,10 @@ table {
 
 .slogan{
     text-transform: uppercase;
-    letter-spacing: 12px;
+    letter-spacing: 10px;
     font-size: 2em;
     font-weight: 300;
+    line-height: 1.5;
 }
 .slogan-small{ font-size: 1.5em; color:#D0A9B7; }
 .header-p {
@@ -459,6 +463,7 @@ table {
 }
 .right{right: 5px;}
 .left{left:5px;}
+.form-remembranzza{background-color: #e3c5c1; padding:20px;}
 @media( max-width:768px){
     .logo-name{font-size: 48px; letter-spacing: 3px;}
     .row{margin:0;}
