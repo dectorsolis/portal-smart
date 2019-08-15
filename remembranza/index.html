@@ -8,7 +8,7 @@
   <meta name="description" content="Sitio oficial de remembranzza, plantilla inicial">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css?v=3.2">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -20,9 +20,9 @@
 <body>
   <!--banner-->
   <section id="banner">
-    <div class="bg-color">
+    
       <header id="header">
-        <div class="container">
+        <div class="container-fluid">
           <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#about">Nosotros</a>
@@ -32,17 +32,14 @@
           <!-- Use any element to open the sidenav -->
           <span onclick="openNav()" class="pull-right menu-icon">☰</span>
         </div>
-      </header>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 inner text-center">
-            <h1 class="logo-name"><img src="img/logo-remembranzza.webp"></h1>
-            <h3>El mejor recuerdo</h3>
-          </div>
-          
+
+        <div id="brand" class="container text-center">
+          <img class="img-fluid" src="img/logo-remembranzza.webp">
+          <h3>El mejor recuerdo</h3>
         </div>
-      </div>
-    </div>
+
+      </header>
+ 
   </section>
   <!-- / banner -->
   
@@ -50,9 +47,9 @@
   <section class="info pink">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center marb-35">
+        <div class="col-md-12 text-center">
           <h1 class="slogan">Relájate estás en <br>las mejores manos</h1>
-          <p>Todo lo que necesitas para una noche mágica está aquí</p>
+          <p>Todo lo que necesitas para una noche mágica está aquí.</p>
         </div>
       </div>
     </div>
@@ -63,53 +60,53 @@
   <section class="slides">
     <div id="bg-slides" class="pink"></div>
     <div class="col-md-8 offset-md-2">
-      <div id="carousel-remembranza" class="container carousel slide" data-ride="carousel">
+      <div id="carousel-remembranza" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100 slide-img" src="img/slide1.webp" alt="Remembranzza slide 1">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Lugares mágicos</h3>
             </div>            
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide2.webp" alt="Remembranzza slide 2">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Banquetes</h3>
             </div>              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide3.webp" alt="Remembranzza slide 3">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Decoración floral</h3>
             </div>              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide4.webp" alt="Remembranzza slide 4">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Equipo y mobiliario</h3>
             </div>              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide5.webp" alt="Remembranzza slide 5">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Coctelería</h3>
             </div>              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide6.webp" alt="Remembranzza slide 6">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Ambientación</h3>
             </div>              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide7.webp" alt="Remembranzza slide 7">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Entretenimiento</h3>
             </div>              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 slide-img" src="img/slide8.webp" alt="Remembranzza slide 8">
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption">
               <h3>Concierge del evento</h3>
             </div>              
           </div>
@@ -132,54 +129,68 @@
         <div class="col-md-12">
           <h3 class="slogan">Servicios</h3>
         </div>
+      </div>
+      <br>
+      <div class="row">
         <div class="col-md-3">
+          <i class="icono fa fa-map-marker" aria-hidden="true"></i>
           <h3 class="slogan-small">Lugares mágicos</h3>
           <p class="small-text">
               Lugares seleccionados en las mejores ubicaciones y para todos los tamaños, listos para cualquier tipo de evento.
           </p>          
         </div>    
         <div class="col-md-3">
+          <i class="icono fa fa-cutlery" aria-hidden="true"></i>
           <h3 class="slogan-small">Banquetes</h3>
           <p class="small-text">
-            La mejor selección solo para ti, desde una comida de 2 tiempos hasta lo mas exótico, sin sacrificar sabor, porción y calidad
+            La mejor selección solo para ti, desde una comida de 2 tiempos hasta lo mas exótico, sin sacrificar sabor, porción y calidad.
           </p>          
         </div>  
         <div class="col-md-3">
+          <i class="icono fa fa-heart" aria-hidden="true"></i>
           <h3 class="slogan-small">Decoración floral</h3>
           <p class="small-text">
-              Selecciona lo que tienes en mente, la mejor variedad de flores acorde a tus gustos
+              Selecciona lo que tienes en mente, la mejor variedad de flores acorde a tus gustos.
           </p>
         </div>    
         <div class="col-md-3">
+          <i class="icono fa fa-building" aria-hidden="true"></i>
           <h3 class="slogan-small">Equipo y mobiliario</h3>
           <p class="small-text">
             Variedad de formas, colores y tamaños. Con la máxima calidad y presentación en el dia de tu evento mas importante.
           </p>          
-        </div>      
+        </div>   
+      </div>
+      <div class="row">   
         <div class="col-md-3">
+          <i class="icono fa fa-glass" aria-hidden="true"></i>
           <h3 class="slogan-small">Coctelería</h3>
           <p class="small-text">
             Disponibles con las mejores opciones de barras de cocteles y la mejor selección para día y noche.
           </p>          
         </div> 
         <div class="col-md-3">
+          <i class="icono fa fa-music" aria-hidden="true"></i>
           <h3 class="slogan-small">Ambientación</h3>
           <p class="small-text">
-            Desde Jazz en la comida hasta el mejor grupo musical, justo como lo deseas
+            Desde Jazz en la comida hasta el mejor grupo musical, justo como lo deseas.
           </p>          
         </div>  
         <div class="col-md-3">
+          <i class="icono fa fa-star" aria-hidden="true"></i>
           <h3 class="slogan-small">Entretenimiento</h3>
           <p class="small-text">
             Momentos únicos con fuegos artificiales hasta shows con artistas de talla mundial, justo como lo soñaste.
           </p>          
         </div>                                     
         <div class="col-md-3">
+          <i class="icono fa fa-user" aria-hidden="true"></i>
           <h3 class="slogan-small">Concierge del evento</h3>
           <p class="small-text">
               Te apoyaremos con tus proveedores a seleccionar lo mejor y si necesitas otros, contamos con mas de 800 proveedores.
           </p>          
         </div>
+      </div>
       </div>
     </div>
   </section>
@@ -190,9 +201,9 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <img src="img/logo-remembranzza.webp">
+            <img class="img-fluid" src="img/logo-remembranzza.webp">
             <p class="small-text">Con mas de 20 años de experiencia y hecho realidad el sueño de mas de 500 novios.<br>
-              Tu sueño es nuestro sueño, hagámoslo realidad
+              Tu sueño es nuestro sueño, hagámoslo realidad.
             </p>
           </div>
         </div>
@@ -201,12 +212,12 @@
     <!--/about-->
 
   <!--about-->
-  <section class="info">
+  <section id="contact-us" class="info">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 text-center">
-            <h3>Estás a un paso de lograr lo que siempre soñaste.</h3>
-            <p>info@remembranzza.com</p>
+          <div class="align-self-center col-md-6 text-center">
+            <h3 class="white">Estás a un paso de lograr lo que siempre soñaste.</h3>
+            <p class="white">info@remembranzza.com</p>
           </div>
           <div class="col-md-6">
             <form class="form-remembranzza">
@@ -233,17 +244,9 @@
 
   <!-- footer -->
   <footer class="footer text-center">
-    <div class="footer-top">
-      <div class="row">
-        <div class="col-md-offset-3 col-md-6 text-center">
-          <div class="widget">
-            <p class="copyright clear-float">
-              <p>Trabajamos para ti con <span class="fa fa-heart  "></span></p>
-              © <span class="copy">Remembranzza</span> 2019.
-            </p>
-          </div>
-        </div>
-      </div>
+    <div>
+        Trabajamos para ti con <span class="fa fa-heart  "></span><br>
+         © <span class="copy">Remembranzza</span> 2019.
     </div>
   </footer>
   <div class="flotante right">
