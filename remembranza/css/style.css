@@ -13,6 +13,8 @@ body {
     font-weight: 400;
     overflow-x: hidden;
 }
+.red{color:red;}
+.padd-15{padding: 15px 0px 15px 0px;}
 .parisienne{font-family: 'Parisienne', cursive;}
 ol, ul {
 	list-style: none;
@@ -29,14 +31,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-#brand{padding-top: 12.5%;}
+#brand{padding-top: 22%;}
+#brand h3{font-style: italic;}
+.grayscale{ filter: grayscale(1); }
 #banner{
     background: url(../img/banner_001.webp) no-repeat center top;
     background-attachment: fixed;
     background-size: cover;
     height:100vh;
 }
-#bg-slides{position: absolute; width:100%;padding:150px;}
+#bg-slides{position: absolute; width:100%;padding-top: 20%;}
 .bg-color{
     background-color: rgba(212, 212, 212,0.4);
 }
@@ -459,7 +463,8 @@ table {
     z-index: 999999;
     bottom: 5px;
 }
-.right{right: 5px;}
+.whats{right: 5px; }
+.call{right: 80px; bottom:3px;}
 .left{left:5px;}
 #contact-us{ background: url(../img/wedding-form.jpg) no-repeat center; background-attachment: fixed; background-size: cover; filter: brightness(0.9);}
 .form-remembranzza{background-color: #e3c5c1; padding:20px;}
