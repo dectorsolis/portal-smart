@@ -66,7 +66,7 @@ table {
 .copy{font-size:18px; text-transform: uppercase; letter-spacing: 6px;}
 .sub-title{font-size: 30px; color: #4d4d4d;}
 .w-100{width:100%;}
-.white{color:white !important;}
+.white{color:white !important; }
 .letter-spacing{letter-spacing: 6px;}
 .divider{border-top: 2px solid #e2bc41;}
 .sidenav {
@@ -477,9 +477,11 @@ table {
     .carousel-caption h3{font-size: 15px; letter-spacing: 3px;}
     .slides{margin-top:20px;}
     #contact-us{background: url(../img/wedding-form-movil.jpg) no-repeat center top !important;}
+    #contact-us h3{font-size: 1.5em; color:white; text-align: center;}
     #brand{padding-top: 50%;}
     .footer{padding: 20px 40px;}
     .slogan{font-size: 1.7em;}
+    .form-remembranzza{background-color: transparent;}
 }
 @media (min-width: 768px) and (max-width: 980px) {
     .content-holder h2 {
