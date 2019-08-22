@@ -62,6 +62,10 @@ table {
 .section-padding{
     padding: 15px;
 }
+.btn-gray{background-color: #cecece;}
+.arrow-gray {filter: brightness(0.1);}
+.review-body{ font-style:italic;}
+.review-name{font-weight: 700; text-align: }
 .title-gold{font-size: 3em; color: #a7782e !important;}
 .copy{font-size:18px; text-transform: uppercase; letter-spacing: 6px;}
 .sub-title{font-size: 30px; color: #4d4d4d;}
@@ -292,7 +296,7 @@ table {
 {
     border-radius: 6px;
 }
-.small-text{height:100px; font-size: 15px;}
+.small-text{font-size: 15px;}
 #event{
     background: url('../img/res02.jpg') no-repeat;
     background-size: cover;
