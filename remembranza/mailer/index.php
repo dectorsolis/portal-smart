@@ -52,7 +52,7 @@ class Mailer{
 		} catch (Exception $e) {
 		    echo json_encode(array(
 		    		"status" => false,
-		    		"msg" => "Ocurrió un problema de envío, intenta nuevamente"
+		    		"msg" => 'Ocurrió un problema de envío, intenta nuevamente'
 		    	));			
 		}		
 	}
