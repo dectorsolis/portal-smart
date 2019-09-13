@@ -119,7 +119,7 @@ table {
     margin-top: 30px;
     cursor: pointer;
 }
-
+.testimonial{height:350px;  display: flex; justify-content: center; align-items: center;}
 .slogan{
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -479,6 +479,7 @@ table {
     .row{margin:0;}
     #brand{padding-top:65%;}
     .logo-remembranzza{width: 400px;}
+    .testimonial{height: auto !important;}
 }
 @media( max-width: 480px ){
     
