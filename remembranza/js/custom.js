@@ -56,7 +56,7 @@ jQuery(".form-remembranzza").submit( function(event){
     
     if( isEmpty( form[0]) ){
       jQuery(form[0][position]).focus();
-      jQuery("#response").html('Por favor rellena todos los campos').addClass("alert alert-warning");
+      jQuery("#response-fields").html('Por favor rellena todos los campos').addClass("alert alert-warning");
     }
     else{
       jQuery.ajax({
