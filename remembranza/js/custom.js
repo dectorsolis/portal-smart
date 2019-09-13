@@ -56,7 +56,7 @@ jQuery(".form-remembranzza").submit( function(event){
     
     if( isEmpty( form[0]) ){
       jQuery(form[0][position]).focus();
-      jQuery("#response").html('Por favor rellena todos los campos').addClass("alert-warning");
+      jQuery("#response").html('Por favor rellena todos los campos').addClass("alert alert-warning");
     }
     else{
       jQuery.ajax({
@@ -71,10 +71,10 @@ jQuery(".form-remembranzza").submit( function(event){
           jQuery("#response").html(response.msg);
 
           if( response.status ){  
-            jQuery("#response").addClass("alert-success").removeClass("alert-danger");
+            jQuery("#response").addClass("alert alert-success").removeClass("alert alert-danger");
           }
           else{
-            jQuery("#response").addClass("alert-danger").removeClass("alert-success");            
+            jQuery("#response").addClass("alert alert-danger").removeClass("alert alert-success");            
           }
         }        
       });
