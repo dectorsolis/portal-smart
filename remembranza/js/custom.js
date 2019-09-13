@@ -1,3 +1,4 @@
+/*
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -44,4 +45,55 @@ function closeNav() {
 		closeNav();
 	});
 
-})(jQuery);
+})(jQuery);*/
+
+var position;
+
+jQuery(".form-remembranzza").submit( function(event){
+    event.preventDefault();  
+
+    var form = jQuery(this);
+    
+    if( isEmpty( form[0]) ){
+      jQuery(form[0][position]).focus();
+      jQuery("#response").html('Por favor rellena todos los campos').addClass("alert-warning");
+    }
+    else{
+      jQuery.ajax({
+        url: "mailer/",
+        method: "POST",
+        data: jQuery(this).serialize(),
+        beforeSend: function(){
+          jQuery("#response").html("Enviando ...");
+        }, 
+        success: function(response){
+          response = JSON.parse(response);
+          jQuery("#response").html(response.msg);
+
+          if( response.status ){  
+            jQuery("#response").addClass("alert-success").removeClass("alert-danger");
+          }
+          else{
+            jQuery("#response").addClass("alert-danger").removeClass("alert-success");            
+          }
+        }        
+      });
+    }
+
+
+} );
+
+function isEmpty( form ){
+  var is_empty = false;
+  position = -1;
+
+  for( var i = 0; i< form.length-1 && !is_empty; i++){
+
+    if( form[i].value.length == 0 ){
+      is_empty = true;
+      position = i;
+    }
+  }
+
+  return is_empty;
+}

@@ -278,20 +278,21 @@
             </p>
           </div>
           <div class="col-md-6">
-            <form class="form-remembranzza">
+            <form method="POST" action="mailer/" class="form-remembranzza">
               <h3>Contáctanos</h3>
               <p>
-                <input type="text" class="form-control" placeholder="Nombre">
+                <input type="text" name="name" class="form-control" placeholder="Nombre">
               </p>
               <p>
-                <input type="text" class="form-control" placeholder="Teléfono">
+                <input type="text" name="email" class="form-control" placeholder="Email">
               </p>
               <p>
-                <input type="text" class="form-control" placeholder="Email">
-              </p>
+                <input type="text" name="phone" class="form-control" placeholder="Teléfono">
+              </p>              
               <p>
-                <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+                <textarea name="msg" class="form-control" rows="5" placeholder="Mensaje"></textarea>
               </p>
+              <p id="response" class="alert"></p>
               <button type="submit" class="gray btn">Enviar</button>
             </form>
           </div>
